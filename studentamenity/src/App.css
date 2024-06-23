@@ -1,0 +1,256 @@
+.App {
+  text-align: center;
+}
+html{
+  background: linear-gradient(300deg,#CDF5FD,#A0E9FF);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.registration-form-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust this to your preference */
+}
+
+.wave-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #ffffff, #871414); /* Adjust gradient colors as needed */
+  z-index: -1;
+}
+
+.registration-form {
+  position: relative;
+  z-index: 1; /* Ensure form appears on top of the background */
+  /* Other styling for your form */
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.body{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #282c34;
+}
+
+.outer{
+  background: linear-gradient(300deg,#CDF5FD,#A0E9FF);
+  display: flex;
+  background-size: 180% 180%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  width: 100%;
+  padding-left: 10px;
+  padding-left: 10px;
+  animation: gradient-animation 18s ease infinite;
+  
+}
+@keyframes gradient-animation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+.innerright{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 554px;
+  padding-left: 15px;
+  box-shadow: #666;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  align-items: center;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgb(50, 49, 49) ;
+  /* align-items: center; */
+}
+.innerleft{
+  height: 554px;
+  width: 450px;
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(11, 239, 68);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 10px 10px 20px rgb(50, 49, 49) ;
+}
+.innerright h1{
+  color:  rgb(2, 50, 16);
+  margin-bottom: 5px;
+}
+.image{
+  width: calc(100% - 20px); /* Subtract twice the padding from the width to account for padding on both sides */
+  height: calc(100% - 20px); 
+  background-image: url('../public/images/file.png'); /* Specify the path to your image */
+  background-size: contain; /* Ensure the image fits inside the container */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center;
+}
+.one,.two,.three,.four,.five,.six{
+  margin-bottom: 10px;
+
+}
+.one.focused input,
+.two.focused input,
+.three.focused input,
+.four.focused input,
+.five.focused input {
+    border-color: rgb(65, 234, 8); /* Change border color to red when input is focused */
+}
+.input-container {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.input-container.focused .icon {
+  color:rgb(17, 236, 5)
+}
+.input-container{
+  width:270px;
+  height: 40px;
+  padding-left: 40px;
+  margin-bottom: 10px;
+  border: solid grey 2px;
+  border-radius: 10px;
+}
+input{
+  width:266px;
+  height: 38px;
+  border: none;
+  border-radius: 10px;
+}
+.submit-button{
+  width: 320px;
+  color:white;
+  background-color:  rgb(11, 239, 68);;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+/* 
+.outerout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.profile-info {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  height: 250px;
+  box-shadow: 10px 10px 20px rgb(50, 49, 49);
+}
+
+.profile-detail {
+  margin-bottom: 15px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Add this CSS to your stylesheet or style tag */
+.profile-photo {
+  width: 150px; /* Set the width of the image */
+  height: 150px; /* Set the height of the image */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 50%; /* Optional: Makes the image circular */
+  border: 2px solid #ccc; /* Optional: Adds a border around the image */
+}
+.profile-photos{
+  width: 150px; /* Set the width of the image */
+  height: 150px; /* Set the height of the image */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 0%; /* Optional: Makes the image circular */
+  border: 2px solid #ccc; 
+}
+.navbox{
+  background-color: black;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navb{
+  /* position: fixed;
+  top:0; */
+  z-index: 1;
+  height: 90px;
+  margin-left: 80px;
+  margin-right: 80px;
+  border-radius: 40px;
+  background-color: white;
+}
+.logo{
+  color: black;
+}
+.otherl{
+  font-weight: bolder;
+}
